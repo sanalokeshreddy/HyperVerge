@@ -1,0 +1,24 @@
+/* [project]/src/components/scorecard-styles.css [app-client] (css) */
+.editable-title:empty:before {
+  content: attr(data-placeholder);
+  color: rgba(255, 255, 255, .5);
+  pointer-events: none;
+  position: absolute;
+}
+
+.editable-title:focus {
+  border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.editable-title {
+  min-height: 28px;
+  padding: 0 2px;
+}
+
+.scorecard-title-disabled:focus {
+  box-shadow: none !important;
+  border-color: rgba(255, 255, 255, 0) !important;
+  outline: none !important;
+}
+
+/*# sourceMappingURL=src_components_scorecard-styles_css_e59ae46c._.single.css.map*/

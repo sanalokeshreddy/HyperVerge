@@ -1,0 +1,24 @@
+{
+  "pages": {
+    "/login/page": [
+      "static/chunks/e8d86_next_dist_ceeae5e2._.js",
+      "static/chunks/src_app_favicon_ico_mjs_1bb4f4ab._.js",
+      "static/chunks/[root-of-the-server]__51cdd1d7._.css",
+      "static/chunks/_e12c3fca._.js",
+      "static/chunks/src_app_layout_tsx_0ba7e042._.js",
+      "static/chunks/e8d86_next_dist_client_components_builtin_global-error_80614814.js",
+      "static/chunks/e8d86_next_88463f02._.js",
+      "static/chunks/src_app_login_page_tsx_219bf25b._.js",
+      "static/chunks/src_app_login_page_tsx_80614814._.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_8df968fb._.js",
+      "static/chunks/e8d86_next_dist_compiled_react-dom_e90fea2f._.js",
+      "static/chunks/e8d86_next_dist_compiled_next-devtools_index_e4e8eda7.js",
+      "static/chunks/e8d86_next_dist_compiled_9f6b9284._.js",
+      "static/chunks/e8d86_next_dist_client_2fd1c985._.js",
+      "static/chunks/e8d86_next_dist_c5e1e48c._.js",
+      "static/chunks/61dca_@swc_helpers_cjs_28edb73c._.js",
+      "static/chunks/_e69f0d32._.js",
+      "static/chunks/_68b7bd5a._.js"
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":["file:///C:/Hyperverge/sensai-frontend/node_modules/.pnpm/next%4015.4.5_%40babel%2Bcore%407.2_ed7b963b8b79c6973a19a9ac5bbdca45/node_modules/next/navigation.js"],"sourcesContent":["module.exports = require('./dist/client/components/navigation')\n"],"names":[],"mappings":"AAAA,OAAO,OAAO","ignoreList":[0],"debugId":null}},
+    {"offset": {"line": 12, "column": 0}, "map": {"version":3,"sources":["file:///C:/Hyperverge/sensai-frontend/node_modules/.pnpm/next%4015.4.5_%40babel%2Bcore%407.2_ed7b963b8b79c6973a19a9ac5bbdca45/node_modules/next/image.js"],"sourcesContent":["module.exports = require('./dist/shared/lib/image-external')\n"],"names":[],"mappings":"AAAA,OAAO,OAAO","ignoreList":[0],"debugId":null}}]
+}

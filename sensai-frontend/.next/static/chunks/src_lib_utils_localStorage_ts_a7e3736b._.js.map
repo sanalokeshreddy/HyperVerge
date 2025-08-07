@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///C:/Hyperverge/sensai-frontend/src/lib/utils/localStorage.ts"],"sourcesContent":["// Safe localStorage wrapper to handle SSR and errors\r\nexport const safeLocalStorage = {\r\n    getItem: (key: string): string | null => {\r\n        try {\r\n            if (typeof window !== 'undefined') {\r\n                return localStorage.getItem(key);\r\n            }\r\n        } catch (error) {\r\n            console.error('Error accessing localStorage:', error);\r\n        }\r\n        return null;\r\n    },\r\n    setItem: (key: string, value: string): void => {\r\n        try {\r\n            if (typeof window !== 'undefined') {\r\n                localStorage.setItem(key, value);\r\n            }\r\n        } catch (error) {\r\n            console.error('Error writing to localStorage:', error);\r\n        }\r\n    }\r\n}; "],"names":[],"mappings":"AAAA,qDAAqD;;;;AAC9C,MAAM,mBAAmB;IAC5B,SAAS,CAAC;QACN,IAAI;YACA,wCAAmC;gBAC/B,OAAO,aAAa,OAAO,CAAC;YAChC;QACJ,EAAE,OAAO,OAAO;YACZ,QAAQ,KAAK,CAAC,iCAAiC;QACnD;QACA,OAAO;IACX;IACA,SAAS,CAAC,KAAa;QACnB,IAAI;YACA,wCAAmC;gBAC/B,aAAa,OAAO,CAAC,KAAK;YAC9B;QACJ,EAAE,OAAO,OAAO;YACZ,QAAQ,KAAK,CAAC,kCAAkC;QACpD;IACJ;AACJ","debugId":null}}]
+}
