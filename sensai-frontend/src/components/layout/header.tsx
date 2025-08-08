@@ -8,8 +8,9 @@ import { signOut, useSession } from "next-auth/react";
 import { useSchools } from "@/lib/api";
 import CreateCourseDialog from "@/components/CreateCourseDialog";
 import SchoolPickerDialog from "@/components/SchoolPickerDialog";
-import { ChevronDown, Plus, X, Book, School } from "lucide-react";
+import { ChevronDown, Plus, X, Book, School, Sparkles } from "lucide-react"; // <-- IMPORT Sparkles
 import { Cohort } from "@/types";
+import GenerateQuizDialog from "@/components/GenerateQuizDialog"; 
 
 interface HeaderProps {
     showCreateCourseButton?: boolean;
@@ -31,6 +32,12 @@ export function Header({
     const [profileMenuOpen, setProfileMenuOpen] = useState(false);
     const [cohortDropdownOpen, setCohortDropdownOpen] = useState(false);
     const [isCreateCourseDialogOpen, setIsCreateCourseDialogOpen] = useState(false);
+    
+    // ==============================================================================
+    //  *** 1. ADD STATE FOR OUR NEW DIALOG ***
+    // ==============================================================================
+    const [isGenerateDialogOpen, setIsGenerateDialogOpen] = useState(false);
+
     const [isSchoolPickerOpen, setIsSchoolPickerOpen] = useState(false);
     const [mobileActionsOpen, setMobileActionsOpen] = useState(false);
     const profileMenuRef = useRef<HTMLDivElement>(null);
@@ -240,6 +247,18 @@ export function Header({
                                 Try a demo
                             </button>
                         )}
+                        
+                        {/* ============================================================================== */}
+                        {/* *** 2. ADD OUR NEW "GENERATE WITH AI" BUTTON *** */}
+                        {/* ============================================================================== */}
+                        <button
+                            onClick={() => setIsGenerateDialogOpen(true)}
+                            className="hidden md:block px-6 py-3 bg-white text-black text-sm font-medium rounded-full hover:opacity-90 transition-opacity focus:outline-none focus:ring-0 focus:border-0 cursor-pointer flex items-center"
+                        >
+                            <Sparkles size={16} className="mr-2"/>
+                            Generate with AI
+                        </button>
+
                         {showCreateCourseButton && (
                             <button
                                 onClick={handleButtonClick}
@@ -408,6 +427,16 @@ export function Header({
                     onCreateSchool={handleCreateSchool}
                 />
             )}
+            
+            {/* ============================================================================== */}
+            {/* *** 3. ADD OUR DIALOG COMPONENT TO THE PAGE *** */}
+            {/* ============================================================================== */}
+            <GenerateQuizDialog
+    open={isGenerateDialogOpen}
+    onClose={() => setIsGenerateDialogOpen(false)}
+    onSubmit={(data) => { console.log("Submission:", data); }}
+/>
+
         </header>
     );
-} 
+}

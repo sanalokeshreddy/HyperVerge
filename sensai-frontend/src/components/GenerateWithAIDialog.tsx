@@ -549,4 +549,4 @@ export default function GenerateWithAIDialog({ open, onClose, onSubmit, validati
             </Dialog>
         </Transition>
     );
-} 
+}

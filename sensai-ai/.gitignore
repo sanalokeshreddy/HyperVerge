@@ -26,3 +26,37 @@ coverage.xml
 uploads
 db.sqlite
 evals
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environments
+venv/
+env/
+.venv/
+
+# Database files
+*.sqlite
+*.sqlite3
+
+# Log files
+logs/
+*.log
+
+# Environment variables
+# Ignore all .env files but KEEP the example files
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Test and coverage reports
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE / Editor directories
+.vscode/
+.idea/

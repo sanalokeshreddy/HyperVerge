@@ -22,6 +22,7 @@ from api.routes import (
     file,
     ai,
     scorecard,
+    assessment, # <-- 1. IMPORT OUR NEW ROUTE
 )
 from api.routes.ai import (
     resume_pending_task_generation_jobs,
@@ -119,6 +120,7 @@ app.include_router(scorecard.router, prefix="/scorecards", tags=["scorecards"])
 app.include_router(code.router, prefix="/code", tags=["code"])
 app.include_router(hva.router, prefix="/hva", tags=["hva"])
 app.include_router(websocket_router, prefix="/ws", tags=["websockets"])
+app.include_router(assessment.router, prefix="/assessment", tags=["Assessment"]) # <-- 2. INCLUDE OUR NEW ROUTER
 
 
 @app.get("/health")
