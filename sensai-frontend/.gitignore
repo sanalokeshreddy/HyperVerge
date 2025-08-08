@@ -26,3 +26,5 @@ coverage/
 # IDE / Editor directories
 .vscode/
 .idea/
+.env.local
+.

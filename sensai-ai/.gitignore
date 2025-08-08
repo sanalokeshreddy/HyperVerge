@@ -60,3 +60,4 @@ htmlcov/
 # IDE / Editor directories
 .vscode/
 .idea/
+.env
